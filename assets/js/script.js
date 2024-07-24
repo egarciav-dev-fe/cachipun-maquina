@@ -57,3 +57,12 @@ while (repeticion <= repeticiones) {
 }
 // Grafico de veces ganas empatadas o perdidas contra la maquina
 document.write(`<h1>Ganaste ${victoria} veces</h1><h2>Perdiste ${derrota} veces</h2><h2>Empate ${empate} veces</h2>`)
+
+//Mensaje de resultado
+if(victoria > derrota && victoria >= empate){
+  alert("La hiciste Sara O'Connor GANASTE!")
+} else if(derrota > victoria && derrota >= empate){
+  alert("Skynet is active PERDISTE")
+} else if(victoria == derrota){
+  alert("EMPATE, Aun no sabemos si ChatGPT o la humanidad la lleva..")
+}
